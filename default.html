@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Tiles</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="container my-3">
+        <div class="row align-items-center">
+            <div class="col-4">
+                <img src="SDPwithMJ-250px.png" alt="Logo" class="img-fluid">
+            </div>
+            <div class="col-8">
+                <h1 class="h3">Melissa Jones</h1>
+                <h2 class="h5">Self Determination with MJ</h2>
+                <h2 class="h5">Independent Facilitator</h2>
+                <h2 class="h5">(714) 329 3554</h2>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="about my-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet libero eget arcu tempor cursus.</p>
+            <p>Integer vel sapien nec eros sollicitudin bibendum nec eget purus. Vivamus volutpat orci id dolor feugiat aliquet.</p>
+        </section>
+        <section class="tiles row">
+            <div class="col-4 mb-3">
+                <div class="tile">
+                    <div class="tile-content">What is Self-determination?</div>
+                    <div class="tile-hidden">Self-determination is an idea that includes people 
+                        choosing and setting their own goals, being involved in making life decisions, 
+                        self-advocating, and working to reach their goals.</div>
+                </div>
+            </div>
+            <div class="col-4 mb-3">
+                <div class="tile">
+                    <div class="tile-content">Request Information</div>
+                    <div class="tile-hidden">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Brief Description of Your Need</label>
+                                <textarea class="form-control" id="description" rows="3" placeholder="Describe your need"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-3">
+                <div class="tile">
+                    <div class="tile-content">Tile 3</div>
+                    <div class="tile-hidden">Expanded Content 3</div>
+                </div>
+            </div>
+            <div class="col-4 mb-3">
+                <div class="tile">
+                    <div class="tile-content">Tile 4</div>
+                    <div class="tile-hidden">Expanded Content 4</div>
+                </div>
+            </div>
+            <div class="col-4 mb-3">
+                <div class="tile">
+                    <div class="tile-content">Tile 5</div>
+                    <div class="tile-hidden">Expanded Content 5</div>
+                </div>
+            </div>
+            <div class="col-4 mb-3">
+                <div class="tile">
+                    <div class="tile-content">Tile 6</div>
+                    <div class="tile-hidden">Expanded Content 6</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

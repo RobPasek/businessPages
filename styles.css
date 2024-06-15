@@ -1,0 +1,119 @@
+css
+Copy code
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tile {
+    position: relative;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 100%; /* Square aspect ratio */
+    transition: all 0.3s ease;
+    border-radius: 15px; /* Rounded corners */
+}
+
+.tile-content, .tile-hidden {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.tile-hidden {
+    opacity: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px; /* Rounded corners */
+}
+
+.tile.expanded .tile-content {
+    opacity: 0;
+}
+
+.tile.expanded .tile-hidden {
+    opacity: 1;
+    z-index: 1;
+}
+
+.tile.expanded {
+    width: 360px !important;
+    height: 360px !important;
+    padding-top: 0 !important; /* Remove aspect ratio */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #d0d0d0;
+    transition: all 0.3s ease;
+    border-radius: 15px; /* Rounded corners */
+}
+
+@media (max-width: 768px) {
+    .tile {
+        padding-top: 100%; /* Maintain square aspect ratio */
+    }
+    .tile.expanded {
+        width: 300px !important;
+        height: 300px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .tile {
+        padding-top: 100%; /* Maintain square aspect ratio */
+    }
+    .tile.expanded {
+        width: 240px !important;
+        height: 240px !important;
+    }
+}
+
+form {
+    width: 100%;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
